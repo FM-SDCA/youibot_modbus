@@ -1,0 +1,160 @@
+/* Home.module.css */
+.container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fixedHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #bceaff; /* ピンクベースの背景色 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    text-align: center;
+    color: #ffffff; /* ビビッドピンク */
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 36px; /* 大きなフォントサイズ */
+}
+
+.stopAllButton {
+    background-color: #00c3ffa2; /* ディープピンク */
+    border-color: transparent;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px; /* ボタンの文字サイズ */
+    border-radius: 20px; /* 角を丸くする */
+}
+
+.stopAllButton:hover {
+    background-color: #94e6ff; /* ホバーカラー */
+    border-color: #94e6ff;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 100%; /* コンテンツの幅を100%に */
+    margin-top: 180px; /* ヘッダーの高さに合わせる */
+}
+
+.card {
+    background: #e4e4e4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+    width: 150px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card.on {
+    background: #ffffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.switch {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.spin {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.modal .ant-modal-content {
+    border-radius: 8px;
+}
+
+.input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    background-color: #595959;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator.on {
+    background-color: #52c41a;
+}
+
+.indicator.off {
+    background-color: #595959;
+}
+
+.registerText {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    color: #ff640a;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emergencyStopButton {
+    background-color: #ff4500;
+    border-color: #ff4500;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.emergencyStopButton:hover {
+    background-color: #ff6347;
+    border-color: #ff6347;
+    color: white;
+}

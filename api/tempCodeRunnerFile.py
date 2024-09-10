@@ -1,0 +1,2 @@
+
+    identity.VendorName = 'ModbusSim'
